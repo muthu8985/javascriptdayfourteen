@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript_day_fourteen</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      // Iterables are iterable objects (like Arrays).
+      // It simply means looping over a sequence of elements.
+      const number = "w3schools";
+      let x = "";
+      for (const y of number) {
+        x += y + "<br>";
+      }
+      document.write(x);
+
+      //   SET
+      // create a set
+      const num = new Set(["a", "b", "c", "d", "e"]);
+      console.log(num);
+      // adding values to the set
+      num.add("f");
+      num.add("g");
+      num.add("h");
+      console.log(num);
+      // repeating duplicate values
+      num.add("a");
+      num.add("a");
+      num.add("b");
+      // //
+
+      let text = "";
+      for (const z of num) {
+        text += z + "<br>";
+      }
+      console.log(num);
+      //   type of sets
+      console.log(typeof num);
+      //    instance of to find is it set?
+      console.log(num instanceof Set);
+      // clear()	Removes all elements from a Set
+
+      const numb = new Set(["a", "b", "c", "d", "e"]);
+      numb.clear();
+      console.log(numb);
+      //   delete in set
+      const numbe = new Set(["a", "b", "c", "d", "e"]);
+      numbe.delete("e");
+      console.log(numbe);
+      // The entries() method returns an Iterator with [value,value] pairs from a set.
+
+      const entry = new Set([
+        "Name",
+        "Age",
+        "desc",
+        "location",
+        "job",
+        "entry",
+      ]);
+      const iter = entry.entries();
+      let its = "";
+      for (const entri of iter) {
+        its += entri + "<br>";
+      }
+      document.write(its);
+      // The forEach() method invokes a function for each set element:
+
+      // The forEach() method does not change the original set.
+
+      // The has() method returns true if a specified value exists in a set.
+      findhas = entry.has("muthu");
+      console.log(findhas);
+      //  The keys() method returns an iterator object with all the values in a set.
+      // Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      // Get the Values
+      const myIterator = letters.keys();
+
+      // List the Values
+      let texts = "";
+      for (const x of myIterator) {
+        texts += x + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = texts;
+      // finding the size
+
+      console.log(letters.size);
+      // The values() method returns an Iterator object with the values in a set
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
