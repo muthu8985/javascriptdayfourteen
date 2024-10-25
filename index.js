@@ -17,7 +17,7 @@ console.log(groceries);
 //  list  all set
 ligro = "";
 for (const x of groceries) {
-  ligro += x + "<br>";
+  ligro += x + "\n";
 }
 console.log(ligro);
 // has set
@@ -27,12 +27,12 @@ console.log(hasgro);
 let entgro = groceries.entries();
 let txt = "";
 for (const g of entgro) {
-  txt += g + "<br>";
+  txt += g + "\n";
 }
 console.log(txt);
 //   for each
 let eachtxt = "";
 groceries.forEach(function (value) {
-  eachtxt += value + "<br>";
+  eachtxt += value + "\n";
 });
 console.log(eachtxt);
